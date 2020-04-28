@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Socket Chat Application</title>
+    <link href="/bootstrap.min.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+    <script src="/jquery-1.10.2.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+<div id="main-content" class="container">
+    <div class="row">
+        <form class="form-inline">
+            <div class="form-group">
+                <label for="connect">Chat Application</label>
+                <button id="connect" type="button">Start New Chat</button>
+                <button id="disconnect" type="button" disabled>End Chat</button>
+            </div>
+        </form>
+    </div>
+    <div class="row">
+        <table id="chat">
+            <thead>
+              <tr>
+                  <th>Welcome user. Please enter your name</th>
+              </tr>
+            </thead>
+            <tbody id="helloworldmessage">
+            </tbody>
+        </table>
+    </div>
+    <div class="row">
+        <form class =form-inline>
+            <div class="form-group">
+                <textarea id="user" placeholder="Write your message here..." required></textarea>
+            </div>
+            <button id="send" type="submit">Send</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
